@@ -14,7 +14,7 @@ public class SistemaNomina {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado ("Daira","Rodriguez","111",800.00);
+        EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado ("Diego","Vargas","111",800.00);
         EmpleadoBaseMasComision empleadoBaseMasComision = new EmpleadoBaseMasComision ("Jorge","Rios","222",5000,.04,300);
         EmpleadoPorComision empleadoPorComision = new EmpleadoPorComision ("Laura","Estrada","333",1000,.06);
         EmpleadoPorHoras empleadoPorHoras = new EmpleadoPorHoras ("Daniel","Jacquez","444",16.75,40);
