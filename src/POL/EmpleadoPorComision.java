@@ -44,7 +44,7 @@ public double ingresos() {
    
     @Override
     public String toString() {
-        return String.format("%s: %s\n%s: $%,.2f; %s: %.2f","empleado por comision",super.toString(),"Ventas brutas", obtenerVentasBrutas(), "tarifa de comision", obtenerTarifaComision());
+        return String.format("%s: %s\n%s: $%,.2f; %s: %.2f","Empleado por comision",super.toString(),"Ventas brutas", obtenerVentasBrutas(), "tarifa de comision", obtenerTarifaComision());
     }
 
    
