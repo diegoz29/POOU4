@@ -7,7 +7,7 @@ package POL;
  *
  * @author DIEGO VARGAS1
  */
-public class Factura {
+public class Factura implements PorPagar{
 
     private String numeroPieza;
     private String descripcionPieza;
@@ -64,17 +64,20 @@ public class Factura {
         }
 
     }
-    public double obtenerPrecioPorArticulo(){
-    return precioPorArticulo;
-}
-    @Override
-    public String toString(){
-        return String.format("%s:\n%s:%s(%s)\n%s:  %d \n%s:  $%,.2f","Factura","Numero de pieza",obtenerNumeroPieza(),obtenerDescripcionPieza(),"Cantidad",obtenerCantidad(),"Precio por articulo",obtenerPrecioPorArticulo());
+
+    public double obtenerPrecioPorArticulo() {
+        return precioPorArticulo;
     }
+
     @Override
-    public double obtenerMontoPago(){
-    //se calcula el monto toal
-        return obtenerCantidad()*obtenerPrecioPorArticulo();
-        
+    public String toString() {
+        return String.format("%s:\n%s:%s(%s)\n%s:  %d \n%s:  $%,.2f", "Factura", "Numero de pieza", obtenerNumeroPieza(), obtenerDescripcionPieza(), "Cantidad", obtenerCantidad(), "Precio por articulo", obtenerPrecioPorArticulo());
+    }
+
+    @Override
+    public double obtenerMontoPago() {
+        //se calcula el monto toal
+        return obtenerCantidad() * obtenerPrecioPorArticulo();
+
     }
 }
